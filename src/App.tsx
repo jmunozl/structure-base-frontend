@@ -4,7 +4,7 @@ import './App.css'
 import axios from 'axios'
 
 function App() {
-	const API_URL = 'https://dashboard.heroku.com/apps/structure-base-backend'
+	const API_URL = 'https://structure-base-backend.herokuapp.com/'
 	const [count, setCount] = useState(0)
 	const [messages, setMessages] = useState('')
 
