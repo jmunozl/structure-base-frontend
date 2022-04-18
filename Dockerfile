@@ -1,8 +1,8 @@
-FROM alpine:3.15.4
+FROM alpine:3.15
 
 RUN apk add yarn 
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package.json .
 COPY yarn.lock .
@@ -13,6 +13,6 @@ COPY . .
 
 RUN yarn build
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]
